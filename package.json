@@ -2,6 +2,7 @@
   "name": "react-workshop-spotify-client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5678/",
   "scripts": {
     "start": "concurrently -p \"[{name}]\" -n \"CLIENT,SERVER\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"yarn run start:client\" \"yarn run start:server\"",
     "start:client": "react-scripts start",
@@ -26,6 +27,7 @@
     "immer": "^6.0.2",
     "isomorphic-fetch": "^2.2.1",
     "new-component": "^1.0.1",
+    "node-fetch": "^2.6.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-loader-spinner": "^3.1.5",
